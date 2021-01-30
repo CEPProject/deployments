@@ -6874,7 +6874,16 @@
       }
     ]
   },
-  "MockDai": "0x671D8B60812A9848BE054C4Cbf101caa172bB3C1",
-  "BDC_DAI": "0x3cD559B5e61FC22Fa0414Eff7BA44c35c297e098",
-  "BDS_DAI": "0x5a8c4ff4D4591541E98744C4b0AD5253140580Cd"
+  "MockDai": {
+    "address": "0x671D8B60812A9848BE054C4Cbf101caa172bB3C1",
+    "abi": []
+  },
+  "BDC_DAI": {
+    "address": "0x3cD559B5e61FC22Fa0414Eff7BA44c35c297e098",
+    "abi": []
+  },
+  "BDS_DAI": {
+    "address": "0x5a8c4ff4D4591541E98744C4b0AD5253140580Cd",
+    "abi": []
+  }
 }

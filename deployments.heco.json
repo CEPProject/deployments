@@ -3520,7 +3520,7 @@
       ]
     },
     "BDCDAIPool": {
-      "address": "0xBbCDCf20da3dcd420568Ca85c03781aaB4a1d4F5",
+      "address": "0x06e4E2ce7cEEE626CD50dECF0de3a5e23BBe7229",
       "abi": [
         {
           "inputs": [
@@ -4003,7 +4003,7 @@
       ]
     },
     "BDCSUSDPool": {
-      "address": "0xE9e55Bdf17cE7D7C5dBbB22f108A7AE3154E2F73",
+      "address": "0xecC487B33293Bc374F60b13Cd48C402E3810d0eE",
       "abi": [
         {
           "inputs": [
@@ -4486,7 +4486,7 @@
       ]
     },
     "BDCUSDCPool": {
-      "address": "0x69C70910a22cd886f984D4D19e0a56B04e8016B2",
+      "address": "0x1FB28dD75A361cA9E3eB24851A58e678C05E526A",
       "abi": [
         {
           "inputs": [
@@ -4969,7 +4969,7 @@
       ]
     },
     "BDCUSDTPool": {
-      "address": "0x2E7973a636E4B8f3bfABB392ADd50dAAA7885E50",
+      "address": "0x0877056495E393fD16738F8B89cE668a8F1546BA",
       "abi": [
         {
           "inputs": [
@@ -5452,7 +5452,7 @@
       ]
     },
     "BDCyCRVPool": {
-      "address": "0x7125B64a238C301455bB1a9A3B227Afe5C8Df3e1",
+      "address": "0x916965a650f6E261A9c045dE1a9Faa48819B5504",
       "abi": [
         {
           "inputs": [

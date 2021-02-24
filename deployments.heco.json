@@ -1759,20 +1759,6 @@
       "address": "0x73539489bd57Ad437Ad70e25b8EF94F55928cf7d",
       "abi": [
         {
-          "inputs": [],
-          "name": "latestSnapshotIndex",
-          "outputs": [
-            {
-              "internalType": "uint256",
-              "name": "",
-              "type": "uint256"
-            }
-          ],
-          "stateMutability": "view",
-          "type": "function",
-          "constant": true
-        },
-        {
           "inputs": [
             {
               "internalType": "contract IERC20",
@@ -1903,6 +1889,54 @@
           "type": "event"
         },
         {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "balanceOf",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [],
+          "name": "epochAlignTimestamp",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [],
+          "name": "epochPeriod",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
           "inputs": [],
           "name": "isOperator",
           "outputs": [
@@ -1952,6 +1986,48 @@
           "type": "function"
         },
         {
+          "inputs": [],
+          "name": "rewardLockupEpochs",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [],
+          "name": "share",
+          "outputs": [
+            {
+              "internalType": "contract IERC20",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [],
+          "name": "totalSupply",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
           "inputs": [
             {
               "internalType": "address",
@@ -1979,7 +2055,21 @@
         },
         {
           "inputs": [],
-          "name": "totalShare",
+          "name": "withdrawLockupEpochs",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [],
+          "name": "latestSnapshotIndex",
           "outputs": [
             {
               "internalType": "uint256",
@@ -1999,7 +2089,21 @@
               "type": "address"
             }
           ],
-          "name": "balanceOf",
+          "name": "getLastSnapshotIndexOf",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [],
+          "name": "getCurrentEpochTimestamp",
           "outputs": [
             {
               "internalType": "uint256",
@@ -2019,7 +2123,81 @@
               "type": "address"
             }
           ],
-          "name": "getAppointmentTimeOf",
+          "name": "getCanWithdrawTime",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "director",
+              "type": "address"
+            }
+          ],
+          "name": "getCanClaimTime",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "director",
+              "type": "address"
+            }
+          ],
+          "name": "canWithdraw",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "director",
+              "type": "address"
+            }
+          ],
+          "name": "canClaimReward",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [],
+          "name": "rewardPerShare",
           "outputs": [
             {
               "internalType": "uint256",
@@ -2052,8 +2230,29 @@
           "constant": true
         },
         {
-          "inputs": [],
-          "name": "claimReward",
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "_withdrawLockupEpochs",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_rewardLockupEpochs",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_epochAlignTimestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_epochPeriod",
+              "type": "uint256"
+            }
+          ],
+          "name": "setLockUp",
           "outputs": [],
           "stateMutability": "nonpayable",
           "type": "function"
@@ -2087,6 +2286,13 @@
         {
           "inputs": [],
           "name": "exit",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function"
+        },
+        {
+          "inputs": [],
+          "name": "claimReward",
           "outputs": [],
           "stateMutability": "nonpayable",
           "type": "function"
@@ -2110,20 +2316,6 @@
       "address": "0x73539489bd57Ad437Ad70e25b8EF94F55928cf7d",
       "abi": [
         {
-          "inputs": [],
-          "name": "latestSnapshotIndex",
-          "outputs": [
-            {
-              "internalType": "uint256",
-              "name": "",
-              "type": "uint256"
-            }
-          ],
-          "stateMutability": "view",
-          "type": "function",
-          "constant": true
-        },
-        {
           "inputs": [
             {
               "internalType": "contract IERC20",
@@ -2254,6 +2446,54 @@
           "type": "event"
         },
         {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "balanceOf",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [],
+          "name": "epochAlignTimestamp",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [],
+          "name": "epochPeriod",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
           "inputs": [],
           "name": "isOperator",
           "outputs": [
@@ -2303,6 +2543,48 @@
           "type": "function"
         },
         {
+          "inputs": [],
+          "name": "rewardLockupEpochs",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [],
+          "name": "share",
+          "outputs": [
+            {
+              "internalType": "contract IERC20",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [],
+          "name": "totalSupply",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
           "inputs": [
             {
               "internalType": "address",
@@ -2330,7 +2612,21 @@
         },
         {
           "inputs": [],
-          "name": "totalShare",
+          "name": "withdrawLockupEpochs",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [],
+          "name": "latestSnapshotIndex",
           "outputs": [
             {
               "internalType": "uint256",
@@ -2350,7 +2646,21 @@
               "type": "address"
             }
           ],
-          "name": "balanceOf",
+          "name": "getLastSnapshotIndexOf",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [],
+          "name": "getCurrentEpochTimestamp",
           "outputs": [
             {
               "internalType": "uint256",
@@ -2370,7 +2680,81 @@
               "type": "address"
             }
           ],
-          "name": "getAppointmentTimeOf",
+          "name": "getCanWithdrawTime",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "director",
+              "type": "address"
+            }
+          ],
+          "name": "getCanClaimTime",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "director",
+              "type": "address"
+            }
+          ],
+          "name": "canWithdraw",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "director",
+              "type": "address"
+            }
+          ],
+          "name": "canClaimReward",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [],
+          "name": "rewardPerShare",
           "outputs": [
             {
               "internalType": "uint256",
@@ -2403,8 +2787,29 @@
           "constant": true
         },
         {
-          "inputs": [],
-          "name": "claimReward",
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "_withdrawLockupEpochs",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_rewardLockupEpochs",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_epochAlignTimestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_epochPeriod",
+              "type": "uint256"
+            }
+          ],
+          "name": "setLockUp",
           "outputs": [],
           "stateMutability": "nonpayable",
           "type": "function"
@@ -2443,6 +2848,13 @@
           "type": "function"
         },
         {
+          "inputs": [],
+          "name": "claimReward",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function"
+        },
+        {
           "inputs": [
             {
               "internalType": "uint256",
@@ -2460,20 +2872,6 @@
     "Boardroom1": {
       "address": "0x73539489bd57Ad437Ad70e25b8EF94F55928cf7d",
       "abi": [
-        {
-          "inputs": [],
-          "name": "latestSnapshotIndex",
-          "outputs": [
-            {
-              "internalType": "uint256",
-              "name": "",
-              "type": "uint256"
-            }
-          ],
-          "stateMutability": "view",
-          "type": "function",
-          "constant": true
-        },
         {
           "inputs": [
             {
@@ -2605,6 +3003,54 @@
           "type": "event"
         },
         {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "account",
+              "type": "address"
+            }
+          ],
+          "name": "balanceOf",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [],
+          "name": "epochAlignTimestamp",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [],
+          "name": "epochPeriod",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
           "inputs": [],
           "name": "isOperator",
           "outputs": [
@@ -2654,6 +3100,48 @@
           "type": "function"
         },
         {
+          "inputs": [],
+          "name": "rewardLockupEpochs",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [],
+          "name": "share",
+          "outputs": [
+            {
+              "internalType": "contract IERC20",
+              "name": "",
+              "type": "address"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [],
+          "name": "totalSupply",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
           "inputs": [
             {
               "internalType": "address",
@@ -2681,67 +3169,7 @@
         },
         {
           "inputs": [],
-          "name": "totalShare",
-          "outputs": [
-            {
-              "internalType": "uint256",
-              "name": "",
-              "type": "uint256"
-            }
-          ],
-          "stateMutability": "view",
-          "type": "function",
-          "constant": true
-        },
-        {
-          "inputs": [
-            {
-              "internalType": "address",
-              "name": "director",
-              "type": "address"
-            }
-          ],
-          "name": "getShareOf",
-          "outputs": [
-            {
-              "internalType": "uint256",
-              "name": "",
-              "type": "uint256"
-            }
-          ],
-          "stateMutability": "view",
-          "type": "function",
-          "constant": true
-        },
-        {
-          "inputs": [
-            {
-              "internalType": "address",
-              "name": "director",
-              "type": "address"
-            }
-          ],
-          "name": "getAppointmentTimeOf",
-          "outputs": [
-            {
-              "internalType": "uint256",
-              "name": "",
-              "type": "uint256"
-            }
-          ],
-          "stateMutability": "view",
-          "type": "function",
-          "constant": true
-        },
-        {
-          "inputs": [
-            {
-              "internalType": "address",
-              "name": "director",
-              "type": "address"
-            }
-          ],
-          "name": "getCashEarningsOf",
+          "name": "withdrawLockupEpochs",
           "outputs": [
             {
               "internalType": "uint256",
@@ -2755,7 +3183,190 @@
         },
         {
           "inputs": [],
-          "name": "claimDividends",
+          "name": "latestSnapshotIndex",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "director",
+              "type": "address"
+            }
+          ],
+          "name": "getLastSnapshotIndexOf",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [],
+          "name": "getCurrentEpochTimestamp",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "director",
+              "type": "address"
+            }
+          ],
+          "name": "getCanWithdrawTime",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "director",
+              "type": "address"
+            }
+          ],
+          "name": "getCanClaimTime",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "director",
+              "type": "address"
+            }
+          ],
+          "name": "canWithdraw",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "director",
+              "type": "address"
+            }
+          ],
+          "name": "canClaimReward",
+          "outputs": [
+            {
+              "internalType": "bool",
+              "name": "",
+              "type": "bool"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [],
+          "name": "rewardPerShare",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "director",
+              "type": "address"
+            }
+          ],
+          "name": "earned",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "view",
+          "type": "function",
+          "constant": true
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "_withdrawLockupEpochs",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_rewardLockupEpochs",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_epochAlignTimestamp",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_epochPeriod",
+              "type": "uint256"
+            }
+          ],
+          "name": "setLockUp",
           "outputs": [],
           "stateMutability": "nonpayable",
           "type": "function"
@@ -2789,6 +3400,13 @@
         {
           "inputs": [],
           "name": "exit",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function"
+        },
+        {
+          "inputs": [],
+          "name": "claimReward",
           "outputs": [],
           "stateMutability": "nonpayable",
           "type": "function"
@@ -9389,11 +10007,6 @@
           "type": "function"
         }
       ]
-    },
-    "Timelock": {
-      "address": "0xfe87A49bc93f264d4915BF0b7C195Ea7DD0EaA4A",
-      "abi": [
-        {"inputs":[{"internalType":"address","name":"admin_","type":"address"},{"internalType":"uint256","name":"delay_","type":"uint256"}],"stateMutability":"nonpayable","type":"constructor"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"bytes32","name":"txHash","type":"bytes32"},{"indexed":true,"internalType":"address","name":"target","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"},{"indexed":false,"internalType":"string","name":"signature","type":"string"},{"indexed":false,"internalType":"bytes","name":"data","type":"bytes"},{"indexed":false,"internalType":"uint256","name":"eta","type":"uint256"}],"name":"CancelTransaction","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"bytes32","name":"txHash","type":"bytes32"},{"indexed":true,"internalType":"address","name":"target","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"},{"indexed":false,"internalType":"string","name":"signature","type":"string"},{"indexed":false,"internalType":"bytes","name":"data","type":"bytes"},{"indexed":false,"internalType":"uint256","name":"eta","type":"uint256"}],"name":"ExecuteTransaction","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"newAdmin","type":"address"}],"name":"NewAdmin","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"uint256","name":"newDelay","type":"uint256"}],"name":"NewDelay","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"address","name":"newPendingAdmin","type":"address"}],"name":"NewPendingAdmin","type":"event"},{"anonymous":false,"inputs":[{"indexed":true,"internalType":"bytes32","name":"txHash","type":"bytes32"},{"indexed":true,"internalType":"address","name":"target","type":"address"},{"indexed":false,"internalType":"uint256","name":"value","type":"uint256"},{"indexed":false,"internalType":"string","name":"signature","type":"string"},{"indexed":false,"internalType":"bytes","name":"data","type":"bytes"},{"indexed":false,"internalType":"uint256","name":"eta","type":"uint256"}],"name":"QueueTransaction","type":"event"},{"inputs":[],"name":"GRACE_PERIOD","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"MAXIMUM_DELAY","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"MINIMUM_DELAY","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"acceptAdmin","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"admin","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"target","type":"address"},{"internalType":"uint256","name":"value","type":"uint256"},{"internalType":"string","name":"signature","type":"string"},{"internalType":"bytes","name":"data","type":"bytes"},{"internalType":"uint256","name":"eta","type":"uint256"}],"name":"cancelTransaction","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[],"name":"delay","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"target","type":"address"},{"internalType":"uint256","name":"value","type":"uint256"},{"internalType":"string","name":"signature","type":"string"},{"internalType":"bytes","name":"data","type":"bytes"},{"internalType":"uint256","name":"eta","type":"uint256"}],"name":"executeTransaction","outputs":[{"internalType":"bytes","name":"","type":"bytes"}],"stateMutability":"payable","type":"function"},{"inputs":[],"name":"pendingAdmin","outputs":[{"internalType":"address","name":"","type":"address"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"address","name":"target","type":"address"},{"internalType":"uint256","name":"value","type":"uint256"},{"internalType":"string","name":"signature","type":"string"},{"internalType":"bytes","name":"data","type":"bytes"},{"internalType":"uint256","name":"eta","type":"uint256"}],"name":"queueTransaction","outputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"bytes32","name":"","type":"bytes32"}],"name":"queuedTransactions","outputs":[{"internalType":"bool","name":"","type":"bool"}],"stateMutability":"view","type":"function"},{"inputs":[{"internalType":"uint256","name":"delay_","type":"uint256"}],"name":"setDelay","outputs":[],"stateMutability":"nonpayable","type":"function"},{"inputs":[{"internalType":"address","name":"pendingAdmin_","type":"address"}],"name":"setPendingAdmin","outputs":[],"stateMutability":"nonpayable","type":"function"},{"stateMutability":"payable","type":"receive"}]
     }
   }
   

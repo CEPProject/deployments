@@ -1,6 +1,6 @@
 {
     "Oracle": {
-      "address": "0x8265999964182C3f86fb04798D5f3224E9AB68d4",
+      "address": "0x6479b2670D811cFf4BfF54216Ad16982DbE68466",
       "abi": [
         {
           "inputs": [
@@ -394,7 +394,7 @@
       ]
     },
     "Cash": {
-      "address": "0x3Da7176D4e92dAE86bF58141b92C9bbd4e597909",
+      "address": "0xc3d815E760A28D30D4F321006B9CB5343cB4CE46",
       "abi": [
         {
           "inputs": [],
@@ -848,7 +848,7 @@
       ]
     },
     "Bond": {
-      "address": "0x50E6c3d3f05F28Ef6AD63177735EA5e3d345a189",
+      "address": "0xa2AcEbC3858C37731D38253037e35d1de9711986",
       "abi": [
         {
           "inputs": [],
@@ -1302,7 +1302,7 @@
       ]
     },
     "Share": {
-      "address": "0x10A08A44ad295656527Caf8e97d814C7F9339e90",
+      "address": "0xF04afcA1e223914AbF8dffed46EF77556C12D042",
       "abi": [
         {
           "inputs": [],
@@ -1756,7 +1756,7 @@
       ]
     },
     "Boardroom3": {
-      "address": "0x73539489bd57Ad437Ad70e25b8EF94F55928cf7d",
+      "address": "0xA8378c1775aE82C70025E6aE4B66c8b054b6aac3",
       "abi": [
         {
           "inputs": [
@@ -2313,7 +2313,7 @@
       ]
     },
     "Boardroom2": {
-      "address": "0x73539489bd57Ad437Ad70e25b8EF94F55928cf7d",
+      "address": "0xA8378c1775aE82C70025E6aE4B66c8b054b6aac3",
       "abi": [
         {
           "inputs": [
@@ -2870,7 +2870,7 @@
       ]
     },
     "Boardroom1": {
-      "address": "0x73539489bd57Ad437Ad70e25b8EF94F55928cf7d",
+      "address": "0xA8378c1775aE82C70025E6aE4B66c8b054b6aac3",
       "abi": [
         {
           "inputs": [
@@ -3427,7 +3427,7 @@
       ]
     },
     "Treasury": {
-      "address": "0x4AF527A7C872EcF8e1C6B4b02aF061A02Dd9CCE5",
+      "address": "0x973A8d1b3467541C7106a03e2f1f4428D1c23ED2",
       "abi": [
         {
           "inputs": [
@@ -4138,7 +4138,7 @@
       ]
     },
     "BDCDAIPool": {
-      "address": "0x7EC82d62923A72f6b16748BdA71Af39835b27de4",
+      "address": "0xBf3Daeb46b5567841E677D4d98145eb8A2211F81",
       "abi": [
         {
           "inputs": [
@@ -4621,7 +4621,7 @@
       ]
     },
     "BDCSUSDPool": {
-      "address": "0xfBF47F2AeEc53C2aeA20602c7eeE36C55390a98c",
+      "address": "0x2570C3b553e78881DebDa31147769EeF2FdDd74D",
       "abi": [
         {
           "inputs": [
@@ -6553,7 +6553,7 @@
       ]
     },
     "DAIBDCLPTokenSharePool": {
-      "address": "0x7ac604582B0278Ff450AE0557A857b83e7522234",
+      "address": "0x0C121dbc1E93732EF094A3F5AA29c23C1b9347da",
       "abi": [
         {
           "inputs": [
@@ -7030,7 +7030,7 @@
       ]
     },
     "DAIBDSLPTokenSharePool": {
-      "address": "0x22d613a848268EBBB15A79e910654237B3bf3D77",
+      "address": "0x811B04B0351f76a00B808a501655247646308b81",
       "abi": [
         {
           "inputs": [
@@ -7493,7 +7493,7 @@
       ]
     },
     "DAIBDCLPTokenCashPool": {
-      "address": "0x3F0656AbC8aDC41dcA2E8B281E605da90ACE4725",
+      "address": "0x6C371331AC5E0741fe1A31ecBd97d03e67b930fe",
       "abi": [
         {
           "inputs": [
@@ -8433,7 +8433,7 @@
       ]
     },
     "MockDai": {
-      "address": "0x11a9C8d3C71debdd5D64F444175a3CE53a6e9e52",
+      "address": "0xdE420691d3B12F126839e79163105A75A8e22Ae4",
       "abi": [
         {
           "inputs": [
@@ -8827,7 +8827,7 @@
       ]
     },
     "MockBdo": {
-      "address": "0x387C0AC43C804B6A4f62aBeC4AA89740f29F4c67",
+      "address": "0xfc31579db65FcF4C528a1A2fc10Ec7df902f7b15",
       "abi": [
         {
           "inputs": [
@@ -9221,7 +9221,7 @@
       ]
     },
     "BDCDAI": {
-      "address": "0x702a8DdA1b124D1530FA1A75D3aB89D65E3644A4",
+      "address": "0xdC4d5b54a72498C4AB672D8075cFD06f52d09870",
       "abi": [
         {
           "inputs": [
@@ -9615,7 +9615,7 @@
       ]
     },
     "BDSDAI": {
-      "address": "0x25bcfB5dC3a9F1EB99af3Aa63C5f4e3aA15968ef",
+      "address": "0xA8EEb5F068b69FE15c519f7122252E1C15bb86Fb",
       "abi": [
         {
           "inputs": [

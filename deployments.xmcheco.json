@@ -1,6 +1,6 @@
 {
     "Oracle": {
-      "address": "0xaF8B368B0F9D43D547cC2586E389B6c6ceD06310",
+      "address": "0xc45dccd21e73C194635E81580a2564f0800aa584",
       "abi": [
         {
           "inputs": [
@@ -394,7 +394,7 @@
       ]
     },
     "Cash": {
-      "address": "0x0C8ee06289A76716c11d69980c04b50e5A4D10F0",
+      "address": "0x3d06A4a283e1A5618E349189ED29fA0B6Bc5CC25",
       "abi": [
         {
           "inputs": [],
@@ -848,7 +848,7 @@
       ]
     },
     "Bond": {
-      "address": "0xE97877ea33cFa9DAf551496A68185a42Bef9A3eC",
+      "address": "0xC8A0CfA4481265D598e50B943d89d69312a8699a",
       "abi": [
         {
           "inputs": [],
@@ -1302,7 +1302,7 @@
       ]
     },
     "Share": {
-      "address": "0x4bB3Af07752fFB4E52AD15AFD3704513172Be2e9",
+      "address": "0x690DF2A026b49dC956F71E408b31Ad10CbF219C7",
       "abi": [
         {
           "inputs": [],
@@ -1756,7 +1756,7 @@
       ]
     },
     "Boardroom3": {
-      "address": "0x159524DF2eA7669299c6a0d30A0ec32803d08915",
+      "address": "0x1a78d8E8857ED87913f61c629dc05F1aD2f55B5d",
       "abi": [
         {
           "inputs": [
@@ -2313,7 +2313,7 @@
       ]
     },
     "Boardroom2": {
-      "address": "0x159524DF2eA7669299c6a0d30A0ec32803d08915",
+      "address": "0x1a78d8E8857ED87913f61c629dc05F1aD2f55B5d",
       "abi": [
         {
           "inputs": [
@@ -2870,7 +2870,7 @@
       ]
     },
     "Boardroom1": {
-      "address": "0x159524DF2eA7669299c6a0d30A0ec32803d08915",
+      "address": "0x1a78d8E8857ED87913f61c629dc05F1aD2f55B5d",
       "abi": [
         {
           "inputs": [
@@ -3427,7 +3427,7 @@
       ]
     },
     "Treasury": {
-      "address": "0x6Ccb4aD35e24E0F93F536e676eF37D7C68bc9b57",
+      "address": "0xA39f3F71B09597Bf68167a1E089dA7762de9cc4E",
       "abi": [
         {
           "inputs": [
@@ -4621,7 +4621,7 @@
       ]
     },
     "XMCSUSDPool": {
-      "address": "0x2913108F58FBec6ef65A8DB7bA3eA40Ab6F83774",
+      "address": "0x43e0bF97551eFfEbE7640cACf37f3d1cbcdcF96e",
       "abi": [
         {
           "inputs": [
@@ -5104,7 +5104,7 @@
       ]
     },
     "DAIXMCLPTokenSharePool": {
-      "address": "0x5219130A0708384DaAe8125D29186d177a09D49f",
+      "address": "0xBbcBE8A5A884075063F3a9Bbe11c0a3f1EE17f7A",
       "abi": [
         {
           "inputs": [
@@ -5581,7 +5581,7 @@
       ]
     },
     "DAIXMSLPTokenSharePool": {
-      "address": "0x7e598244794A98D1006830f114a72821D583C9E0",
+      "address": "0x50dBf70b69B9A29De763588c06FE1D804769469e",
       "abi": [
         {
           "inputs": [
@@ -6044,7 +6044,7 @@
       ]
     },
     "DAIXMCLPTokenCashPool": {
-      "address": "0xE168866BDA47F63C4725EB03b7A17818d7d3dB1D",
+      "address": "0x0055234bDD518EB7A6636648c4aeD1818bCc1e70",
       "abi": [
         {
           "inputs": [
@@ -7309,7 +7309,7 @@
       ]
     },
     "XMCDAI": {
-      "address": "0x860f7b23C7EE9349Ba42A6f46fD203919A1bd97a",
+      "address": "0x6E80aF694723bC98E2e9bF23117B025Bb4a5C7eA",
       "abi": [
         {
           "inputs": [
@@ -7703,7 +7703,7 @@
       ]
     },
     "XMSDAI": {
-      "address": "0x56F10b7F7Cdd5e397Bf3108d535094fd10F7AC78",
+      "address": "0x560028d27020A0C951f49aaA95889763798B8e6A",
       "abi": [
         {
           "inputs": [
